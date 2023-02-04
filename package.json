@@ -1,0 +1,22 @@
+{
+  "name": "nodejsbasictoadvance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kakon-mehedi/NodeJsBasicToAdvance.git"
+  },
+  "author": "Kakon Mehedi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kakon-mehedi/NodeJsBasicToAdvance/issues"
+  },
+  "homepage": "https://github.com/kakon-mehedi/NodeJsBasicToAdvance#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
