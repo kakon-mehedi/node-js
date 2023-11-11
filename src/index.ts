@@ -1,5 +1,6 @@
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
+import { books } from './database/books.js';
 
 const typeDefs = `#graphql
   type Book {
@@ -11,17 +12,6 @@ const typeDefs = `#graphql
     books: [Book]
   }
 `;
-
-const books = [
-	{
-		title: 'The Awakening',
-		author: 'Kate Chopin',
-	},
-	{
-		title: 'City of Glass',
-		author: 'Paul Auster',
-	},
-];
 
 const resolvers = {
 	Query: {
@@ -38,4 +28,4 @@ const { url } = await startStandaloneServer(server, {
 	listen: { port: 4000 },
 });
 
-console.log(`🚀  Server ready at: ${url}`);
+console.log(`Hello Server ready at: ${url}`);
