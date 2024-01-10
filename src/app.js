@@ -16,6 +16,11 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public"));
 app.use(cookieParser());
 
+// Test route
+app.get('/test', (req, res) => {
+  res.send('Test server works!')
+})
+
 //routes import
 import userRouter from "./routes/user.routes.js";
 
